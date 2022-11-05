@@ -24,28 +24,28 @@ module.exports = {
   networks: {
     localhost: {
       url: "http://127.0.0.1:8545",
-      accounts: {
+      account: {
         mnemonic: DEVCHAIN_MNEMONIC,
       },
     },
     alfajores: {
       url: "https://alfajores-forno.celo-testnet.org",
-      accounts: [process.env.PRIVATE_KEY],
+      account: [process.env.PRIVATE_KEY],
       chainId: 44787,
     },
     alfajoresDatahub: {
       url: "https://celo-alfajores--rpc.datahub.figment.io/apikey/<API KEY>",
-      accounts: [process.env.PRIVATE_KEY],
+      account: [process.env.PRIVATE_KEY],
       chainId: 44787,
     },
     celo: {
       url: "https://forno.celo.org",
-      accounts: [process.env.PRIVATE_KEY],
+      account: [process.env.PRIVATE_KEY],
       chainId: 42220,
     },
     celoDatahub: {
       url: "https://celo-mainnet--rpc.datahub.figment.io/apikey/<API KEY>",
-      accounts: [process.env.PRIVATE_KEY],
+      account: [process.env.PRIVATE_KEY],
       chainId: 42220,
     },
   },
